@@ -45,22 +45,22 @@ public class Menu extends JFrame implements ActionListener{
 	public void buttons(){
 		
 		start = new JButton("Start");
-		start.setBounds(126, 70, 140, 40);
+		start.setBounds(126, 65, 140, 40);
 		start.addActionListener(this);
 		add(start);
 
 		settings = new JButton("Einstellungen");
-		settings.setBounds(126, 125, 140, 30);
+		settings.setBounds(126, 119, 140, 30);
 		settings.addActionListener(this);
 		add(settings);
 		
 		info = new JButton("Credits");
-		info.setBounds(126, 170, 140, 30);
+		info.setBounds(126, 164, 140, 30);
 		info.addActionListener(this);
 		add(info);
 		
 		exit = new JButton("Schlieﬂen");
-		exit.setBounds(126, 215, 140, 30);
+		exit.setBounds(126, 209, 140, 30);
 		exit.addActionListener(this);
 		add(exit);
 	}
