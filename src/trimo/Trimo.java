@@ -8,6 +8,7 @@ import java.awt.Graphics;
 import java.awt.image.BufferStrategy;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
+
 import javax.swing.JFrame;
 
 import trimo.entity.mob.Player;
@@ -54,6 +55,8 @@ public class Trimo extends Canvas implements Runnable {
 		keyboard = new Keyboard();
 		level = new SpawnLevel("/levels/spawn_level.png");
 		playerSpawn = new TileCoordinate(9, 10);
+//		level = new SpawnLevel("/levels/SpawnLevel.png");
+//		playerSpawn = new TileCoordinate(20, 19);
 		player = new Player(playerSpawn.x(), playerSpawn.y(), keyboard);
 		player.init(level);
 
@@ -160,10 +163,9 @@ public class Trimo extends Canvas implements Runnable {
 
 		Graphics g = bs.getDrawGraphics();
 		g.drawImage(img, 0, 0, getWidth(), getHeight(), null);
-		g.setColor(Color.RED);
-		g.setFont(new Font("Verdana", 0, 50));
+		g.setColor(Color.WHITE);
+		g.setFont(new Font("Calibri", 2, 50));
 //		g.fillRect(Mouse.getX() - 16, Mouse.getY() - 16, 32, 32);
-		g.drawString("Tick:" + tick, 20, 60);
 		
 		String secS = "" + sec;
 		if(sec < 10) secS = "0" + sec;
@@ -174,6 +176,7 @@ public class Trimo extends Canvas implements Runnable {
 		String dayS = "" + day;
 		if(day < 10) dayS = "0" + day;
 		g.drawString("Time: " + dayS + ":" + hourS + ":" + minS + ":" + secS, 20, 110);
+		g.drawString("Tick:" + tick, 20, 60);
 		
 		g.dispose();
 		bs.show();
