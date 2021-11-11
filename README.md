@@ -2,7 +2,7 @@
 
 Self-written game engine for a top-down shooter.
 
-Big thanks to [TheCherno](https://github.com/TheCherno) for the great tutorial! (https://www.youtube.com/playlist?list=PLlrATfBNZ98eOOCk2fOFg7Qg5yoQfFAdf)
+Big thanks to [TheCherno](https://github.com/TheCherno) for the great tutorial! ([YouTube Playlist](https://www.youtube.com/playlist?list=PLlrATfBNZ98eOOCk2fOFg7Qg5yoQfFAdf))
 
 Current (very early) state with homemade textures&trade;:
 
